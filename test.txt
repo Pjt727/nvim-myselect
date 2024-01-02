@@ -1,0 +1,9 @@
+lua require('MySelect')
+
+
+def get_user_guess():
+    while True:
+        try:
+            return int(input("\nEnter your guess: "))
+        except ValueError:
+            print("Please enter a valid number.")
